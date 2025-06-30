@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3c280d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a1b08;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base font */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Animation delays for staggered effects */
+.animate-fadeInUp:nth-child(1) { animation-delay: 0ms; }
+.animate-fadeInUp:nth-child(2) { animation-delay: 100ms; }
+.animate-fadeInUp:nth-child(3) { animation-delay: 200ms; }
+.animate-fadeInUp:nth-child(4) { animation-delay: 300ms; }
